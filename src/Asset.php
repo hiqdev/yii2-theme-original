@@ -25,7 +25,7 @@ class Asset extends \yii\web\AssetBundle
      * @inheritdoc
      */
     public $depends = [
-        \yii\web\Asset::class,
+        \yii\web\YiiAsset::class,
         \yii\bootstrap\BootstrapAsset::class,
     ];
 }
