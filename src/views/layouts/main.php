@@ -6,7 +6,6 @@
 use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
-use yii\widgets\Breadcrumbs;
 
 Yii::$app->themeManager->registerAssets();
 
@@ -42,7 +41,8 @@ Yii::$app->themeManager->registerAssets();
         <?php if (Yii::$app->themeManager->hasWidget('Flashes')) : ?>
             <?= Yii::$app->themeManager->widget('Flashes') ?>
         <?php endif ?>
-        <?= Breadcrumbs::widget([
+        <?= Yii::$app->themeManager->widget([
+            'class' => 'Breadcrumbs',
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
         <?= $content ?>
