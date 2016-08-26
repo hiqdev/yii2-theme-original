@@ -8,7 +8,7 @@ use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 
-Yii::$app->get('themeManager')->registerAssets();
+Yii::$app->themeManager->registerAssets();
 
 ?>
 <?php $this->beginPage() ?>
@@ -25,22 +25,23 @@ Yii::$app->get('themeManager')->registerAssets();
 <?php $this->beginBody() ?>
 
 <div class="wrap">
-    <?php
-    NavBar::begin([
+    <?php NavBar::begin([
         'brandLabel' => Yii::$app->name,
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
-    ]);
-    echo Yii::$app->get('menuManager')->render('main', [
-        'class'   => Nav::class,
-        'options' => ['class' => 'navbar-nav navbar-right'],
-    ]);
-    NavBar::end();
-    ?>
+    ]) ?>
+        <?= Yii::$app->menuManager->render('main', [
+            'class'   => Nav::class,
+            'options' => ['class' => 'navbar-nav navbar-right'],
+        ]) ?>
+    <?php NavBar::end() ?>
 
     <div class="container">
+        <?php if (Yii::$app->themeManager->hasWidget('Flashes')) : ?>
+            <?= Yii::$app->themeManager->widget('Flashes') ?>
+        <?php endif ?>
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
