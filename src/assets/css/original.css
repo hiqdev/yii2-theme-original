@@ -10,12 +10,7 @@ body {
     padding: 0 0 60px;
 }
 
-.wrap > .container {
-    padding: 70px 15px 20px;
-}
-
 .footer {
-    height: 60px;
     background-color: #f5f5f5;
     border-top: 1px solid #ddd;
     padding-top: 20px;
@@ -34,6 +29,10 @@ body {
 .not-set {
     color: #c55;
     font-style: italic;
+}
+
+a {
+    word-break: break-word;
 }
 
 /* add sorting icons to gridview sort links */

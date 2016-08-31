@@ -4,8 +4,6 @@
 /* @var $content string */
 
 use yii\helpers\Html;
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
 
 Yii::$app->themeManager->registerAssets();
 
@@ -24,39 +22,14 @@ Yii::$app->themeManager->registerAssets();
 <?php $this->beginBody() ?>
 
 <div class="wrap">
-    <?php NavBar::begin([
-        'brandLabel' => Yii::$app->name,
-        'brandUrl' => Yii::$app->homeUrl,
-        'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
-        ],
-    ]) ?>
-        <?= Yii::$app->menuManager->render('main', [
-            'class'   => Nav::class,
-            'options' => ['class' => 'navbar-nav navbar-right'],
-        ]) ?>
-    <?php NavBar::end() ?>
+    <?= $this->render('//layouts/_header') ?>
+    <?= $this->render('//layouts/_after_header') ?>
 
-    <div class="container">
-        <?php if (Yii::$app->themeManager->hasWidget('Flashes')) : ?>
-            <?= Yii::$app->themeManager->widget('Flashes') ?>
-        <?php endif ?>
-        <?= Yii::$app->themeManager->widget([
-            'class' => 'Breadcrumbs',
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
-        <?= $content ?>
-    </div>
+    <?= $this->render('//layouts/_content', compact('content')) ?>
 </div>
 
-<footer class="footer">
-    <div class="container">
-        <p class="pull-left">
-            &copy; <?= Yii::$app->themeManager->widget('CopyrightYears') ?> <?= Yii::$app->themeManager->widget('OrganizationLink') ?>
-            <?= Yii::t('hiqdev/themes/original', 'All rights reserved.') ?>
-        <p class="pull-right"><?= Yii::powered() ?></p>
-    </div>
-</footer>
+<?= $this->render('//layouts/_footer') ?>
+<?= $this->render('//layouts/_after_footer') ?>
 
 <?php $this->endBody() ?>
 </body>
