@@ -10,9 +10,10 @@
             <?= $this->render('//layouts/_header') ?>
             <?= $this->render('//layouts/_after_header') ?>
             <?= $this->render('//layouts/_content', compact('content')) ?>
-            <?= $this->render('//layouts/_footer') ?>
-            <?= $this->render('//layouts/_after_footer') ?>
         </div>
+
+        <?= $this->render('//layouts/_footer') ?>
+        <?= $this->render('//layouts/_after_footer') ?>
     <?php $this->endBody() ?>
     </body>
 </html>
