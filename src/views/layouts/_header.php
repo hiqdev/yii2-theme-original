@@ -16,4 +16,4 @@ use yii\bootstrap\NavBar;
         'options' => ['class' => 'navbar-nav navbar-right'],
     ]) ?>
 <?php NavBar::end() ?>
-<div style="margin-top:50px"></div>
+<div style="padding-top:50px"></div>

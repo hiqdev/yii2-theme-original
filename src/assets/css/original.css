@@ -11,9 +11,20 @@ body {
 }
 
 .footer {
+    height: 60px;
     background-color: #f5f5f5;
     border-top: 1px solid #ddd;
     padding-top: 20px;
+}
+@media (max-width: 600px) {
+    .footer .container p,
+    .footer .container p.pull-right
+    {
+        clear: both!important;
+        float: none!important;
+        text-align: left!important;
+        margin: 0;
+    }
 }
 
 .jumbotron {
