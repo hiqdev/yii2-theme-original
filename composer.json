@@ -1,7 +1,7 @@
 {
     "name": "hiqdev/yii2-theme-original",
     "type": "yii2-extension",
-    "description": "Original Theme for hiqdev/yii2-thememanager",
+    "description": "Yii2 Original Theme for hiqdev/yii2-thememanager",
     "keywords": [
         "original",
         "theme",

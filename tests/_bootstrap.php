@@ -8,16 +8,8 @@
  * @copyright Copyright (c) 2016, HiQDev (http://hiqdev.com/)
  */
 
-namespace hiqdev\themes\original;
+error_reporting(E_ALL & ~E_NOTICE);
 
-/**
- * Theme class.
- */
-class Theme extends \hiqdev\thememanager\Theme
-{
-    public $label = 'Original';
+$bootstrap = __DIR__ . '/../src/_bootstrap.php';
 
-    public $assets = [
-        Asset::class,
-    ];
-}
+require_once file_exists($bootstrap) ? $bootstrap : __DIR__ . '/../vendor/autoload.php';

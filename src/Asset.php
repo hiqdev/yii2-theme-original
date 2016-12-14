@@ -1,4 +1,12 @@
 <?php
+/**
+ * Yii2 Original Theme for hiqdev/yii2-thememanager
+ *
+ * @link      https://github.com/hiqdev/yii2-theme-original
+ * @package   yii2-theme-original
+ * @license   BSD-3-Clause
+ * @copyright Copyright (c) 2016, HiQDev (http://hiqdev.com/)
+ */
 
 namespace hiqdev\themes\original;
 
@@ -8,12 +16,12 @@ namespace hiqdev\themes\original;
 class Asset extends \yii\web\AssetBundle
 {
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public $sourcePath = '@hiqdev/themes/original/assets';
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public $css = [
         'css/original.css',
@@ -22,7 +30,7 @@ class Asset extends \yii\web\AssetBundle
     public $js = [];
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public $depends = [
         \yii\web\YiiAsset::class,

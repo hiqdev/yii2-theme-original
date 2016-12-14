@@ -1,7 +1,7 @@
 package:
     type:           yii2-extension
     name:           yii2-theme-original
-    title:          Original Theme for hiqdev/yii2-thememanager
+    title:          Yii2 Original Theme for hiqdev/yii2-thememanager
     headline:       Yii2 Original Theme
     keywords:       original, theme, extension, yii2
     namespace:      hiqdev\themes\original

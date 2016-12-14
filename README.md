@@ -1,7 +1,7 @@
 Yii2 Original Theme
 ===================
 
-**Original Theme for hiqdev/yii2-thememanager**
+**Yii2 Original Theme for hiqdev/yii2-thememanager**
 
 [![Latest Stable Version](https://poser.pugx.org/hiqdev/yii2-theme-original/v/stable)](https://packagist.org/packages/hiqdev/yii2-theme-original)
 [![Total Downloads](https://poser.pugx.org/hiqdev/yii2-theme-original/downloads)](https://packagist.org/packages/hiqdev/yii2-theme-original)
