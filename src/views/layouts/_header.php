@@ -1,5 +1,6 @@
 <?php
 
+use hiqdev\thememanager\menus\AbstractMainMenu;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 
@@ -11,8 +12,8 @@ use yii\bootstrap\NavBar;
         'class' => 'navbar-inverse navbar-fixed-top',
     ],
 ]) ?>
-    <?= Yii::$app->menuManager->render('main', [
-        'class'   => Nav::class,
+    <?= AbstractMainMenu::widget([], [
+        'class' => Nav::class,
         'options' => ['class' => 'navbar-nav navbar-right'],
     ]) ?>
 <?php NavBar::end() ?>

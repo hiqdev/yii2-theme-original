@@ -1,11 +1,11 @@
 <footer class="footer">
     <div class="container">
         <p class="pull-left">
-            &copy; <?= Yii::$app->themeManager->widget('CopyrightYears') ?> <?= Yii::$app->themeManager->widget('OrganizationLink') ?>.
+            &copy; <?= \hiqdev\thememanager\widgets\CopyrightYears::widget() ?> <?= \hiqdev\thememanager\widgets\OrganizationLink::widget()?>.
             <?= Yii::t('hiqdev/themes/original', 'All rights reserved.') ?>
         </p>
         <p class="pull-right">
-            <?= Yii::$app->themeManager->widget('PoweredBy') ?>
+            <?= \hiqdev\thememanager\widgets\PoweredBy::widget() ?>
         </p>
     </div>
 </footer>
