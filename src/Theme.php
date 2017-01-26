@@ -17,10 +17,6 @@ class Theme extends \hiqdev\thememanager\Theme
 {
     public $label = 'Original';
 
-    public $images = [
-        '/assets/screenshots/1.jpg',
-    ];
-
     public $assets = [
         Asset::class,
     ];
