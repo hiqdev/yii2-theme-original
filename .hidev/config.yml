@@ -1,9 +1,12 @@
 package:
     type:           yii2-extension
     name:           yii2-theme-original
-    title:          Yii2 Original Theme for hiqdev/yii2-thememanager
+    title:          Yii2 Original Theme for Yii2 projects
     headline:       Yii2 Original Theme
-    keywords:       original, theme, extension, yii2
-    namespace:      hiqdev\themes\original
+    keywords:       yii2, original, theme, plugin
     description:    |
-        This package provides Original theme for [Yii2 framework](http://yiiframework.com).
+        This package provides Yii2 original theme for Yii2 projects.
+
+        This package uses [hiqdev/yii2-thememanager] theming library.
+
+        [hiqdev/yii2-thememanager]: https://github.com/hiqdev/yii2-thememanager

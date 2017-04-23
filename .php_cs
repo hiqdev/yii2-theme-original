@@ -1,7 +1,7 @@
 <?php
 
 $header = <<<EOF
-Yii2 Original Theme for hiqdev/yii2-thememanager
+Yii2 Original Theme for Yii2 projects
 
 @link      https://github.com/hiqdev/yii2-theme-original
 @package   yii2-theme-original

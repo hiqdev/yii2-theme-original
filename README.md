@@ -1,7 +1,6 @@
-Yii2 Original Theme
-===================
+# Yii2 Original Theme
 
-**Yii2 Original Theme for hiqdev/yii2-thememanager**
+**Yii2 Original Theme for Yii2 projects**
 
 [![Latest Stable Version](https://poser.pugx.org/hiqdev/yii2-theme-original/v/stable)](https://packagist.org/packages/hiqdev/yii2-theme-original)
 [![Total Downloads](https://poser.pugx.org/hiqdev/yii2-theme-original/downloads)](https://packagist.org/packages/hiqdev/yii2-theme-original)
@@ -10,7 +9,11 @@ Yii2 Original Theme
 [![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/hiqdev/yii2-theme-original.svg)](https://scrutinizer-ci.com/g/hiqdev/yii2-theme-original/)
 [![Dependency Status](https://www.versioneye.com/php/hiqdev:yii2-theme-original/dev-master/badge.svg)](https://www.versioneye.com/php/hiqdev:yii2-theme-original/dev-master)
 
-This package provides Original theme for [Yii2 framework](http://yiiframework.com).
+This package provides Yii2 original theme for Yii2 projects.
+
+This package uses [hiqdev/yii2-thememanager] theming library.
+
+[hiqdev/yii2-thememanager]: https://github.com/hiqdev/yii2-thememanager
 
 ## Installation
 

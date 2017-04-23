@@ -1,12 +1,12 @@
 {
     "name": "hiqdev/yii2-theme-original",
     "type": "yii2-extension",
-    "description": "Yii2 Original Theme for hiqdev/yii2-thememanager",
+    "description": "Yii2 Original Theme for Yii2 projects",
     "keywords": [
+        "yii2",
         "original",
         "theme",
-        "extension",
-        "yii2"
+        "plugin"
     ],
     "homepage": "https://github.com/hiqdev/yii2-theme-original",
     "license": "BSD-3-Clause",
