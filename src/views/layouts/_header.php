@@ -15,6 +15,7 @@ use yii\bootstrap\NavBar;
     <?= AbstractMainMenu::widget([], [
         'class' => Nav::class,
         'options' => ['class' => 'navbar-nav navbar-right'],
+        'encodeLabels' => false,
     ]) ?>
 <?php NavBar::end() ?>
 <div style="padding-top:50px"></div>
