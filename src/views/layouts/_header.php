@@ -2,7 +2,7 @@
 
 use yii\bootstrap\NavBar;
 
-use hiqdev\themes\original\menus\NavbarMenu;
+use hiqdev\thememanager\menus\AbstractNavbarMenu;
 
 ?>
 <?php NavBar::begin([
@@ -12,7 +12,7 @@ use hiqdev\themes\original\menus\NavbarMenu;
         'class' => 'navbar-inverse navbar-fixed-top',
     ],
 ]) ?>
-    <?= NavbarMenu::widget([], [
+    <?= AbstractNavbarMenu::widget([], [
         'encodeLabels' => false,
         'options' => [
             'tag' => false,
