@@ -1,8 +1,8 @@
 <?php
 
-use hiqdev\thememanager\menus\AbstractMainMenu;
-use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
+
+use hiqdev\themes\original\menus\NavbarMenu;
 
 ?>
 <?php NavBar::begin([
@@ -12,10 +12,14 @@ use yii\bootstrap\NavBar;
         'class' => 'navbar-inverse navbar-fixed-top',
     ],
 ]) ?>
-    <?= AbstractMainMenu::widget([], [
-        'class' => Nav::class,
-        'options' => ['class' => 'navbar-nav navbar-right'],
+    <?= NavbarMenu::widget([], [
         'encodeLabels' => false,
+        'options' => [
+            'tag' => false,
+        ],
+        'itemOptions' => [
+            'tag' => false,
+        ],
     ]) ?>
 <?php NavBar::end() ?>
 <div style="padding-top:50px"></div>
