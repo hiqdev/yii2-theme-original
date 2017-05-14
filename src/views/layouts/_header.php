@@ -22,4 +22,4 @@ use hiqdev\thememanager\menus\AbstractNavbarMenu;
         ],
     ]) ?>
 <?php NavBar::end() ?>
-<div style="padding-top:50px"></div>
+<div style="padding-top:10px"></div>
